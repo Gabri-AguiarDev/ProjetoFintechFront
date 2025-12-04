@@ -1,0 +1,151 @@
+/* Core Colors */
+:root {
+  --purple: #5a2ea6;
+  --purple-dark: #6a1bb1;
+  --purple-light: #eee6f8;
+  --pix-color: #5a2ea6;
+  --transfer-color: #6c757d;
+  --pagar-color: #28a745;
+  --recarga-color: #ffc107;
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.text-purple {
+  color: var(--purple) !important;
+}
+
+.icon-hover-purple:hover {
+    color: var(--purple);
+    cursor: pointer;
+}
+
+.bg-purple-light {
+    background-color: var(--purple-light);
+}
+.bg-success-light {
+    background-color: rgba(40, 167, 69, 0.1); /* Verde claro */
+}
+.bg-secondary-light {
+    background-color: rgba(108, 117, 125, 0.1); /* Cinza claro */
+}
+.bg-warning-light {
+    background-color: rgba(255, 193, 7, 0.1); /* Amarelo claro */
+}
+.bg-info-light {
+    background-color: rgba(23, 162, 184, 0.1); /* Azul claro */
+}
+.text-danger {
+    color: #dc3545 !important;
+}
+
+
+/* SIDEBAR STYLES */
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 15rem; /* Largura da Sidebar no Desktop */
+  transition: margin 0.25s ease-out;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+/* Esconder a Sidebar por padrão em Mobile */
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 100%;
+    }
+}
+
+/* Sidebar Item Active */
+.active-sidebar {
+  color: var(--purple) !important;
+  background-color: var(--purple-light) !important;
+  border-left: 4px solid var(--purple) !important;
+  font-weight: bold;
+}
+
+/* BALANCE CARD */
+.balance-card {
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+  border-radius: 18px;
+}
+
+/* QUICK ACTIONS (Ícones coloridos) */
+.action-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pix-bg {
+  background-color: var(--pix-color);
+}
+.transfer-bg {
+  background-color: #3b82f6; /* Um azul limpo */
+}
+.pagar-bg {
+  background-color: #22c55e; /* Um verde limpo */
+}
+.recarga-bg {
+  background-color: #f97316; /* Um laranja limpo */
+}
+
+/* FEATURE CARDS (Destaques para você) */
+.icon-feature {
+    font-size: 24px;
+    color: var(--purple);
+}
+
+.feature-card {
+    transition: transform .15s ease-in-out, box-shadow .2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    cursor: pointer;
+}
+
+/* MOVIMENTAÇÕES RECENTES (Ícones pequenos) */
+.action-icon-sm {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* Ajuste de espaçamento para o corpo do conteúdo principal */
+.main-content {
+    /* Padding lateral maior para desktop */
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+@media (min-width: 768px) {
+    /* Em desktop, garante que o conteúdo principal ocupe o espaço restante */
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+}

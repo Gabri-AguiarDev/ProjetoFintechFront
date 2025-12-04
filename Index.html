@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech Wallet - Dashboard</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-light">
+
+  <div class="d-flex" id="wrapper">
+
+    <div class="bg-white border-end d-none d-md-block" id="sidebar-wrapper">
+      <div class="sidebar-heading text-center p-3 fs-5 fw-bold text-purple">Fintech Wallet</div>
+      <div class="list-group list-group-flush mt-4">
+        <a class="list-group-item list-group-item-action p-3" href="#!"><i class="bi bi-person-circle me-2"></i> Perfil</a>
+        <a class="list-group-item list-group-item-action p-3 active-sidebar" href="#!"><i class="bi bi-wallet2 me-2"></i> Carteira</a>
+        <a class="list-group-item list-group-item-action p-3" href="#!"><i class="bi bi-list-ul me-2"></i> Extrato</a>
+      </div>
+    </div>
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+        <div class="container-fluid">
+          <button class="btn btn-outline-secondary d-md-none" id="sidebarToggle">
+            <i class="bi bi-list"></i>
+          </button>
+          
+          <div class="d-flex align-items-center ms-auto">
+            <span class="d-none d-md-inline me-3">Olá, Maria Clara</span>
+            <div class="rounded-circle bg-purple text-white p-2 fw-bold me-3">MC</div>
+            <i class="bi bi-bell fs-5 me-3 icon-hover-purple"></i>
+            <i class="bi bi-question-circle fs-5 icon-hover-purple"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid py-4 main-content">
+        
+        <div class="row mb-4 d-flex align-items-center">
+          <div class="col-12 col-md-8">
+            <h4 class="text-purple fw-bold mb-0 d-md-none">Olá, Maria Clara</h4>
+            <h4 class="d-none d-md-block">Olá</h4>
+            <h1 class="fw-bolder text-purple d-none d-md-block">Maria Clara</h1>
+          </div>
+          <div class="col-12 col-md-4 text-end d-none d-md-block">
+            <i class="bi bi-bell fs-4 me-3 icon-hover-purple"></i>
+            <i class="bi bi-question-circle fs-4 icon-hover-purple"></i>
+          </div>
+        </div>
+
+        <div class="card balance-card text-white shadow-lg border-0 mb-4">
+          <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-start">
+              <h6 class="opacity-75">Saldo disponível</h6>
+              <i class="bi bi-eye-slash-fill fs-5 opacity-75"></i>
+            </div>
+            <h1 class="fw-bolder mt-1 mb-4">R$ 12.847,32</h1>
+
+            <div class="row">
+              <div class="col-6 border-end border-white border-opacity-25">
+                <p class="mb-0 small opacity-75">Receitas do mês</p>
+                <p class="mb-0 fw-bold">+ R$ 8.500,00</p>
+              </div>
+              <div class="col-6">
+                <p class="mb-0 small opacity-75">Despesas do mês</p>
+                <p class="mb-0 fw-bold">- R$ 3.240,50</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5 class="mt-4 mb-3 fw-bold">Ações rápidas</h5>
+        <div class="row g-3 mb-5">
+          
+          <div class="col-3 col-md-auto text-center">
+            <div class="action-icon-wrapper pix-bg shadow-sm">
+              <i class="bi bi-lightning-charge-fill fs-4 text-white"></i>
+            </div>
+            <p class="mt-2 mb-0 small">PIX</p>
+          </div>
+
+          <div class="col-3 col-md-auto text-center">
+            <div class="action-icon-wrapper transfer-bg shadow-sm">
+              <i class="bi bi-arrow-left-right fs-4 text-white"></i>
+            </div>
+            <p class="mt-2 mb-0 small">Transferir</p>
+          </div>
+
+          <div class="col-3 col-md-auto text-center">
+            <div class="action-icon-wrapper pagar-bg shadow-sm">
+              <i class="bi bi-receipt fs-4 text-white"></i>
+            </div>
+            <p class="mt-2 mb-0 small">Pagar</p>
+          </div>
+
+          <div class="col-3 col-md-auto text-center">
+            <div class="action-icon-wrapper recarga-bg shadow-sm">
+              <i class="bi bi-phone fs-4 text-white"></i>
+            </div>
+            <p class="mt-2 mb-0 small">Recarga</p>
+          </div>
+
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="fw-bold mb-0">Destaques para você</h5>
+          <a href="#" class="small text-purple text-decoration-none fw-semibold">Ver todos</a>
+        </div>
+        
+        <div class="row g-4 mb-5">
+          
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card shadow-sm p-3 border rounded-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-credit-card-2-front icon-feature me-2"></i>
+                <h6 class="fw-bold mb-0">Cartão Virtual</h6>
+              </div>
+              <p class="small mb-0 text-secondary">Compre online com segurança</p>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card shadow-sm p-3 border rounded-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-graph-up icon-feature me-2"></i>
+                <h6 class="fw-bold mb-0">Rendimento</h6>
+              </div>
+              <p class="small mb-0 text-secondary">Seu dinheiro rendendo 100% do CDI</p>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card shadow-sm p-3 border rounded-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-box-seam icon-feature me-2"></i>
+                <h6 class="fw-bold mb-0">Cashback</h6>
+              </div>
+              <p class="small mb-0 text-secondary">Ganhe até 5% de volta</p>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="feature-card shadow-sm p-3 border rounded-3">
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-shield-lock icon-feature me-2"></i>
+                <h6 class="fw-bold mb-0">Seguro</h6>
+              </div>
+              <p class="small mb-0 text-secondary">Proteção em todas as transações</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card bg-purple text-white shadow-lg border-0 mb-5">
+          <div class="card-body d-flex justify-content-between align-items-center p-4">
+            <div>
+              <h5 class="fw-bold mb-1">Indique amigos e ganhe!</h5>
+              <p class="small mb-2">R$ 20 para você e R$ 20 para seu amigo</p>
+              <button class="btn btn-light btn-sm fw-semibold px-3">Indicar agora</button>
+            </div>
+            <i class="bi bi-gift fs-1 opacity-75"></i>
+          </div>
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="fw-bold mb-0">Movimentações recentes</h5>
+          <a href="#" class="small text-purple text-decoration-none fw-semibold">Ver extrato</a>
+        </div>
+        
+        <div class="list-group list-group-flush mb-5">
+            
+            <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon-sm bg-success-light me-3"><i class="bi bi-arrow-down-left text-success"></i></div>
+                    <div>
+                        <p class="fw-semibold mb-0">Transferência recebida</p>
+                        <p class="small text-muted mb-0">João Silva</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p class="fw-semibold text-success mb-0">+R$ 450,00</p>
+                    <p class="small text-muted mb-0">Hoje, 14:32</p>
+                </div>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon-sm bg-secondary-light me-3"><i class="bi bi-receipt text-secondary"></i></div>
+                    <div>
+                        <p class="fw-semibold mb-0">Pagamento</p>
+                        <p class="small text-muted mb-0">Supermercado Extra</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p class="fw-semibold text-danger mb-0">R$ 127,89</p>
+                    <p class="small text-muted mb-0">Hoje, 11:20</p>
+                </div>
+            </div>
+            
+            <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon-sm bg-purple-light me-3"><i class="bi bi-lightning-charge text-purple"></i></div>
+                    <div>
+                        <p class="fw-semibold mb-0">PIX enviado</p>
+                        <p class="small text-muted mb-0">Ana Costa</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p class="fw-semibold text-danger mb-0">R$ 65,50</p>
+                    <p class="small text-muted mb-0">Ontem, 18:45</p>
+                </div>
+            </div>
+            
+            <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon-sm bg-warning-light me-3"><i class="bi bi-phone text-warning"></i></div>
+                    <div>
+                        <p class="fw-semibold mb-0">Recarga de celular</p>
+                        <p class="small text-muted mb-0">TIM Pré-pago</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p class="fw-semibold text-danger mb-0">R$ 30,00</p>
+                    <p class="small text-muted mb-0">Ontem, 15:12</p>
+                </div>
+            </div>
+            
+            <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon-sm bg-info-light me-3"><i class="bi bi-arrow-up-right text-info"></i></div>
+                    <div>
+                        <p class="fw-semibold mb-0">Transferência enviada</p>
+                        <p class="small text-muted mb-0">Pedro Santos</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p class="fw-semibold text-danger mb-0">R$ 200,00</p>
+                    <p class="small text-muted mb-0">03 Dez, 10:30</p>
+                </div>
+            </div>
+            
+            <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <div class="action-icon-sm bg-success-light me-3"><i class="bi bi-arrow-down-left text-success"></i></div>
+                    <div>
+                        <p class="fw-semibold mb-0">PIX recebido</p>
+                        <p class="small text-muted mb-0">Maria Oliveira</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p class="fw-semibold text-success mb-0">+R$ 150,00</p>
+                    <p class="small text-muted mb-0">02 Dez, 16:20</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    document.getElementById('sidebarToggle').addEventListener('click', event => {
+      event.preventDefault();
+      document.getElementById('wrapper').classList.toggle('toggled');
+    });
+  </script>
+
+</body>
+</html>
